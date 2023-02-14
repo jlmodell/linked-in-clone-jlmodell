@@ -1,0 +1,14 @@
+---
+import HeaderLeft from "../components/HeaderLeft.astro";
+import HeaderRight from "../components/HeaderRight.astro";
+import HeaderCenter from "../components/HeaderCenter.astro";
+---
+<nav class="w-full bg-white">   
+    <div class="flex mx-auto max-w-3xl justify-between pb-1">
+        <HeaderLeft />
+        <div class="flex divide-x">
+            <HeaderCenter />   
+            <HeaderRight />
+        </div>
+    </div>
+</nav>
