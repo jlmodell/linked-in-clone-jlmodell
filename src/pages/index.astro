@@ -1,29 +1,69 @@
 ---
-import CenterBody from '../components/CenterBody.astro';
-import SideBarAd from '../components/SideBarAd.astro';
-import SideBarLeft from '../components/SideBarLeft.astro';
-import SideBarLeftBottom from '../components/SideBarLeftBottom.astro';
-import SideBarRight from '../components/SideBarRight.astro';
-import Layout from '../layouts/Layout.astro';
-
+import CenterSearch from "../components/CenterSearch.astro";
+import Post from "../components/Post.astro";
+import SideBarAd from "../components/SideBarAd.astro";
+import SideBarLeft from "../components/SideBarLeft.astro";
+import SideBarLeftBottom from "../components/SideBarLeftBottom.astro";
+import SideBarRight from "../components/SideBarRight.astro";
+import SplitVertical from "../components/SplitVertical.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="InLinked">
-	<main class="max-w-3xl mx-auto flex space-x-1">
-		<div class="w-3/12 flex flex-col space-y-1">
-			<SideBarLeft />			
-			<SideBarLeftBottom />
-		</div>
-		<div class="mt-1 w-5/12">
-			<CenterBody />
-		</div>
-		<div class="mt-1 w-4/12 flex flex-col space-y-1">
-			<SideBarRight />
-			<SideBarAd />
-		</div>
-		<!-- <div class="bg-white rounded mt-1 border border-stone-200">
-			<SideBarLeftBottom />
-		</div> -->
+  <main class="max-w-3xl mx-auto flex space-x-1">
+    <div class="w-3/12 flex flex-col space-y-1">
+      <SideBarLeft />
+      <SideBarLeftBottom />
+    </div>
+    <div class="mt-1 w-6/12">
+      <CenterSearch />
+      <SplitVertical />
 
-	</main>
+      <Post
+        name="Astro"
+        profileImage="https://avatars.githubusercontent.com/u/44914786?s=280&v=4"
+        postImage="https://css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png"
+        postText="Astro is a new static site renderer built for the component era. It's fast, lightweight, and built with components in mind."
+        posted="2h"
+        followers="10.2k"
+        likes="300"
+        hearts="100"
+        reposts="76"
+        comments="100"
+        tag="Astro"
+      />
+
+      <Post
+        name="Astro"
+        profileImage="https://avatars.githubusercontent.com/u/44914786?s=280&v=4"
+        postImage="https://css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png"
+        postText="Astro is a new static site renderer built for the component era. It's fast, lightweight, and built with components in mind."
+        posted="2h"
+        followers="10.2k"
+        likes="300"
+        hearts="100"
+        reposts="76"
+        comments="100"
+        tag="Astro"
+      />
+
+      <Post
+        name="Astro"
+        profileImage="https://avatars.githubusercontent.com/u/44914786?s=280&v=4"
+        postImage="https://css-tricks.com/wp-content/uploads/2021/05/astro-homepage.png"
+        postText="Astro is a new static site renderer built for the component era. It's fast, lightweight, and built with components in mind."
+        posted="2h"
+        followers="10.2k"
+        likes="300"
+        hearts="100"
+        reposts="76"
+        comments="100"
+        tag="Astro"
+      />
+    </div>
+    <div class="mt-1 w-4/12 flex flex-col space-y-1">
+      <SideBarRight />
+      <SideBarAd />
+    </div>
+  </main>
 </Layout>
